@@ -90,8 +90,7 @@ public class Main {
         // Create a BookIssuedDetail for a borrowed book
         BookIssuedDetail issuedDetail = new BookIssuedDetail(book1, patron1);
 
-        // Simulate returning the book late
-        issuedDetail.returnBook(new java.util.Date()); // Sets returnDate to now
+        issuedDetail.returnBook();
 
         // Calculate and print the fine
         double fine = issuedDetail.calculateFine();

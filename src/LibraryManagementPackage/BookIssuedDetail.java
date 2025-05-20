@@ -1,4 +1,5 @@
 package LibraryManagementPackage;
+
 import java.util.Date;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -37,7 +38,7 @@ public class BookIssuedDetail {
         return returnDate;
     }
 
-    public void returnBook(Date returnDate) {
+    public void returnBook() {
         this.returnDate = LocalDate.now();
     }
 
