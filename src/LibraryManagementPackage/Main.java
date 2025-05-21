@@ -54,9 +54,7 @@ public class Main {
             System.out.println("Recommended for " + patron1.getName() + ": " + recommended.getTitle());
         }
 
-        // Add this inside your main method
         Inventory inventory = new Inventory();
-
         // Add books to inventory
         inventory.addToInventory(branch1, book1, 5);
         inventory.addToInventory(branch1, book2, 3);
@@ -87,7 +85,6 @@ public class Main {
             System.out.println("Transfer completed for book: " + book3.getTitle());
         }
 
-        // Create a BookIssuedDetail for a borrowed book
         BookIssuedDetail issuedDetail = new BookIssuedDetail(book1, patron1);
 
         issuedDetail.returnBook();
